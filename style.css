@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+  --midnight-blue: #0b1d3a;
+  --cream-white: #faf8f4;
+  --accent-gold: #ffd389;
+  --accent-cyan: #06bdd9;
+  --soft-gray: #393e46;
+}
+
+body {
+  background-color: var(--midnight-blue);
+  color: var(--cream-white);
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  background-color: rgba(11, 29, 58, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 1rem 0;
+}
+
+.navbar .logo {
+  width: 35px;
+  height: 35px;
+}
+
+.navbar a.nav-link {
+  color: var(--cream-white);
+  margin-left: 1rem;
+  transition: color 0.3s;
+}
+
+.navbar a.nav-link:hover {
+  color: var(--accent-cyan);
+}
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(11, 29, 58, 0.8), rgba(11, 29, 58, 0.8)),
+              url('images/hero.webp') center/cover no-repeat;
+  color: var(--cream-white);
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  color: var(--accent-gold);
+}
+
+.hero p {
+  font-size: 1.3rem;
+}
+
+/* BUTTON */
+.btn-primary {
+  background-color: var(--accent-gold);
+  border: none;
+  color: var(--midnight-blue);
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-cyan);
+  color: var(--midnight-blue);
+}
+
+/* SECTION TITLE */
+.section-title {
+  color: var(--accent-cyan);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* CARDS */
+.country-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: var(--soft-gray);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.country-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(255, 211, 137, 0.3);
+}
+
+.country-card img {
+  height: 220px;
+  object-fit: cover;
+}
+
+/* FOOTER */
+.footer {
+  background-color: var(--soft-gray);
+  color: var(--cream-white);
+}
+
+.footer h5 {
+  color: var(--accent-gold);
+}
+
+.footer a {
+  color: var(--accent-cyan);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: var(--accent-gold);
+}
+
+.social-icons a {
+  color: var(--accent-cyan);
+  font-size: 1.3rem;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: var(--accent-gold);
+}
+
+/* -------- PAGE SMOOTH FADE -------- */
+body {
+  opacity: 0;
+  animation: fadeIn 0.8s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Explore page hero */
+.explore-hero {
+  height: 60vh;
+  background: linear-gradient(rgba(11, 29, 58, 0.8), rgba(11, 29, 58, 0.8)),
+              url("images/explore-hero.webp") center/cover no-repeat;
+  color: var(--cream-white);
+}
+
+.explore-content {
+  animation: slideUp 1s ease-out forwards;
+  opacity: 0;
+}
+
+
+/* Country Page Hero */
+.country-hero {
+  height: 60vh;
+  background: linear-gradient(rgba(11, 29, 58, 0.8), rgba(11, 29, 58, 0.8)),
+              url("images/country-hero.webp") center/cover no-repeat;
+  color: var(--cream-white);
+  text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+/* Landmark Cards */
+.landmark-card {
+  height: 100%;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #2e3749;
+  color: var(--cream-white);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.landmark-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+}
+
+.landmark-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.landmark-card .card-body {
+  height: 150px;        
+}
+
+.gallery img {
+  width: 100%;
+  height: 220px;      
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.brazil-hero {
+  background: linear-gradient(rgba(11, 29, 58, 0.8), rgba(11, 29, 58, 0.8)),
+              url("images/brazil-hero.webp") center/cover no-repeat !important;
+}
+
+.japan-hero {
+  background: linear-gradient(rgba(11, 29, 58, 0.8), rgba(11, 29, 58, 0.8)),
+              url("images/japan-hero.webp") center/cover no-repeat !important;
+}
+
+.france-hero {
+  background: linear-gradient(rgba(11, 29, 58, 0.8), rgba(11, 29, 58, 0.8)),
+              url("images/france-hero.webp") center/cover no-repeat !important;
+}
+
+.lebanon-hero {
+  background: linear-gradient(rgba(11, 29, 58, 0.8), rgba(11, 29, 58, 0.8)),
+              url("images/lebanon-hero.webp") center/cover no-repeat !important;
+}
+
+.russia-hero {
+  background: linear-gradient(rgba(11, 29, 58, 0.8), rgba(11, 29, 58, 0.8)),
+              url("images/russia-hero.webp") center/cover no-repeat !important;
+}
+
+.colombia-hero {
+  background: linear-gradient(rgba(11, 29, 58, 0.8), rgba(11, 29, 58, 0.8)),
+              url("images/colombia-hero.webp") center/cover no-repeat !important;
+}
+
+.about-hero {
+  height: 70vh; 
+}
+
+.contact-hero {
+  height: 60vh;
+  background: linear-gradient(rgba(11, 29, 58, 0.85), rgba(11, 29, 58, 0.85)),
+              url("images/contact-hero.webp") center/cover no-repeat !important;
+}

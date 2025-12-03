@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>World In Motion | Home</title>
+  <link rel="icon" href="images/logo.png" type="image/png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!--NAVBAR-->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="images/logo.png" alt="Logo" class="logo me-2" />
+        <span>World In Motion</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="explore.html">Explore</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--HERO SECTION-->
+  <section class="hero d-flex flex-column justify-content-center align-items-center text-center">
+    <div class="container" data-aos="fade-up">
+      <h1 class="fw-bold">World In Motion</h1>
+      <p class="lead">Interactive exploration of world cultures.</p>
+      <a href="explore.html" class="btn btn-primary mt-3">Explore</a>
+    </div>
+  </section>
+
+  <!--FEATURED COUNTRIES-->
+  <section class="container my-5">
+  <h2 class="section-title text-center">Featured Countries</h2>
+
+  <div class="row g-4 mt-4" data-aos="fade-up">
+
+    <!-- Brazil -->
+    <div class="col-md-4">
+      <a href="brazil.html" class="text-decoration-none">
+        <div class="card country-card">
+          <img src="images/brazil.webp" alt="Brazil" loading="lazy" class="card-img-top" />
+          <div class="card-body text-center">
+            <h5>Brazil</h5>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Japan -->
+    <div class="col-md-4">
+      <a href="japan.html" class="text-decoration-none">
+        <div class="card country-card">
+          <img src="images/japan.webp" alt="Japan" loading="lazy" class="card-img-top" />
+          <div class="card-body text-center">
+            <h5>Japan</h5>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- France -->
+    <div class="col-md-4">
+      <a href="france.html" class="text-decoration-none">
+        <div class="card country-card">
+          <img src="images/france.webp" alt="France" loading="lazy" class="card-img-top" />
+          <div class="card-body text-center">
+            <h5>France</h5>
+          </div>
+        </div>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- POPULAR DESTINATIONS -->
+  <section class="container my-5">
+    <h2 class="section-title text-center">Popular Destinations</h2>
+    <div class="row g-4 mt-4 justify-content-center" data-aos="fade-up">
+      <div class="col-md-3">
+        <div class="card country-card">
+          <img src="images/dest1.webp" alt="Destination" loading="lazy" />
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card country-card">
+          <img src="images/dest2.webp" alt="Destination" loading="lazy" />
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card country-card">
+          <img src="images/dest3.webp" alt="Destination" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer text-center text-lg-start">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-lg-4 mb-3">
+          <h5>World In Motion</h5>
+          <p>Explore cultures, destinations, and traditions around the globe.</p>
+        </div>
+
+        <div class="col-lg-4 mb-3">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4">
+          <h5>Follow Us</h5>
+          <div class="social-icons">
+            <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.x.com"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="my-3" />
+      <p class="mb-0">© 2025 World In Motion | All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
